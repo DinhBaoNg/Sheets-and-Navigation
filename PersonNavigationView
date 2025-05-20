@@ -1,0 +1,16 @@
+import SwiftUI
+
+struct PersonNavigationView: View {
+    
+    let person: Person
+    
+    var body: some View {
+        VStack {
+            Text("The person's name is \(person.name)")
+        }
+    }
+}
+
+#Preview {
+    PersonNavigationView(person: Person(name: "Paul"))
+}
